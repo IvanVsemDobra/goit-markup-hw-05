@@ -407,7 +407,6 @@ h3 {
 }
 .team-icon {
 fill:var(--cloud);
-
 }
     
 .section-portfolio {
@@ -573,4 +572,101 @@ fill:var(--cloud);
 .footer-tem-link:focus,
 .footer-tem-link:active {
     background-color: var(--green);
+}
+
+.backdrop {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: var(--navy-blue-modal);
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+
+}
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 408px;
+    min-height:584px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background: var(--dairy);
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop:not (.is-open) .modal {
+    transform: translate(-50%, -100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form {
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.close-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+}
+.close-box:hover,
+.close-box:focus {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--ocean);
+        border-radius: 50%;
+}
+.button-close {
+    border-radius: 50%;
+}
+.modal-txt {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--navy-blue);
+}
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    position: relative;
+}
+.team-icon-madal {
+    fill: var(--navy-blue);
+    position: absolute;
+    
+}
+.input-box-label {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
 }
