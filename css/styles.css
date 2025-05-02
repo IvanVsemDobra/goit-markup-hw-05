@@ -643,8 +643,26 @@ pointer-events: none;
     background-color: var(--ocean);
         border-radius: 50%;
 }
-.button-close {
+
+.button_close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+.icon-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--navy-blue);
+    position: relative;
 }
 .modal-txt {
     font-family: var(--font-family);
