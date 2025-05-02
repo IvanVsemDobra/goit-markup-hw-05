@@ -596,7 +596,7 @@ fill:var(--cloud);
 .icon-footer {
     position: absolute;
     top: 8px;
-    right: 16px;
+    margin-left: 16px;
 }
 .footer-address-item {
     font-family: var(--font-family);
@@ -633,6 +633,28 @@ fill:var(--cloud);
 }
 .footer-form-input-email {
     background-color: var(--navy-blue);
+    width: 264px;
+    height: 40px;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--white);
+}
+    .placeholder {
+        color: var(--white);
+    }
+.footer-form-input-email:focus {
+    outline: none;
+    border: 1px solid var(--ocean);
+    background-color: var(--navy-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--white);
 }
 .backdrop {
 position: fixed;
