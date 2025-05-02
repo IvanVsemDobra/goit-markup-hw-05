@@ -543,6 +543,7 @@ fill:var(--cloud);
     display:flex;
     justify-content: flex-start;
     gap: 16px;
+    margin-right: 80px;
 }
 .scocial-list-team {
     width: 40px;
@@ -573,7 +574,66 @@ fill:var(--cloud);
 .footer-tem-link:active {
     background-color: var(--green);
 }
+.container-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.footer-address-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
 
+.footer-address-link {
+    color: var(--white);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.icon-footer {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+.footer-address-item {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    text-decoration: none;
+    position: relative;
+}
+.footer-button_email {
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+.footer-button_email:hover,
+.footer-button_email:focus {
+    cursor: pointer;
+    background-color: var(--ocean);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button_footer {
+    border-radius: 4px;
+    padding: 8px 24px;
+    width: 165px;
+    height: 40px;
+    background: var(--iris);
+}
+.footer-form-input-email {
+    background-color: var(--navy-blue);
+}
 .backdrop {
 position: fixed;
 top: 0;
