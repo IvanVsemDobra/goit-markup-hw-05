@@ -595,9 +595,6 @@ fill:var(--cloud);
     gap: 24px;
     display: flex;
 }
-.footer-button-box {
- 
-}
 
 .icon-footer {
     position: absolute;
