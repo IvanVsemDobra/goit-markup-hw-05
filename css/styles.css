@@ -672,7 +672,7 @@ fill:var(--cloud);
     justify-content: center;
     margin-left: auto;
     position: relative;
-    width: 165px;
+    max-width: 165px;
     height: 40px;
     font-family: var(--font-family);
     font-weight: 500;
@@ -684,6 +684,13 @@ fill:var(--cloud);
     background-color: var(--navy-blue);
     border: none;
     border-radius: 4px;
+}
+.button_footer:hover,
+.button_footer:focus {
+    cursor: pointer;
+    background-color: var(--ocean);
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
 position: fixed;
