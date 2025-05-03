@@ -596,11 +596,7 @@ fill:var(--cloud);
     display: flex;
 }
 .footer-button-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    position: relative;
+ 
 }
 
 .icon-footer {
@@ -626,6 +622,7 @@ fill:var(--cloud);
     height: 40px;
     background-color: var(--navy-blue);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    position: absolute;
 }
 .footer-button_email:hover,
 .footer-button_email:focus {
@@ -670,8 +667,23 @@ fill:var(--cloud);
     color: var(--white);
 }
 .button_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    position: relative;
     width: 165px;
     height: 40px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    cursor: pointer;
+    background-color: var(--navy-blue);
+    border: none;
+    border-radius: 4px;
 }
 .backdrop {
 position: fixed;
