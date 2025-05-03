@@ -669,7 +669,7 @@ fill:var(--cloud);
     justify-content: center;
     margin-left: auto;
     position: relative;
-    max-width: 165px;
+    min-width: 165px;
     height: 40px;
     font-family: var(--font-family);
     font-weight: 500;
@@ -678,7 +678,7 @@ fill:var(--cloud);
     letter-spacing: 0.04em;
     color: var(--white);
     cursor: pointer;
-    background-color: var(--navy-blue);
+    background-color: var(--iris);
     border: none;
     border-radius: 4px;
 }
@@ -730,6 +730,8 @@ pointer-events: none;
     border-radius: 4px;
     transform: translate(-50%, -50%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px;
+    
 }
 .backdrop:not(.is-open) .modal {
     transform: translate(-50%, -100%);
@@ -741,24 +743,38 @@ pointer-events: none;
     flex-direction: column;
     gap: 16px;
 }
-.close-box {
+.button_close-box {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     top: 24px;
     right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--cornflower);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close-box:hover,
-.close-box:focus {
-    cursor: pointer;
-    transform: scale(1.2);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.button_close-box:hover,
+.button_close-box:focus {
     background-color: var(--ocean);
-        border-radius: 50%;
+    border: none;
+    cursor: pointer;
 }
-
+.icon-close {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50%;
+}
+.icon-close:hover,
+.icon-close:focus {
+    fill: var(--white);
+    cursor: pointer;
+}
 .close_button {
     position: absolute;
     top: 24px;
@@ -772,13 +788,7 @@ pointer-events: none;
     cursor: pointer;
     margin-bottom: 24px;
 }
-.icon-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: var(--navy-blue);
-    position: relative;
-}
+
 .modal-txt {
     font-family: var(--font-family);
     font-weight: 500;
