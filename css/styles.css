@@ -797,7 +797,7 @@ pointer-events: none;
     display: block;
     position: relative;
 }
-.input-box:hover:has(.form-input:hover) .team-icon-madal {
+.form-input:focus + .team-icon-madal {
     fill: var(--iris);
     border: none;
 } 
@@ -879,7 +879,6 @@ height: 24px;
     width: 100%;
 }
 .checkbox-box-f {
-    display: flex;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 12px;
@@ -924,6 +923,12 @@ height: 24px;
         margin-right: 8px;
     
 }
+.checkbox-icon {
+    display: inline-block;
+    position: relative;
+    
+    
+}
 input:checked + .checkbox-box-f>.checkbox-icon-box {
     border-radius: 2px;
     fill: var(--cloud);
@@ -931,17 +936,10 @@ input:checked + .checkbox-box-f>.checkbox-icon-box {
     border: none;
     border: 1px solid var(--ocean);
 }
-.model-button-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    
-}
+
 .model-button {
     display: block;
-    margin-right: 0 auto ;
-    margin-left: 0 auto;
+    margin: 0 auto ;
     min-width: 169px;
     height: 56px;
     font-family: var(--font-family);
