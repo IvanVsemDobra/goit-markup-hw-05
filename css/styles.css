@@ -747,7 +747,6 @@ pointer-events: none;
     right: 24px;
     width: 24px;
     height: 24px;
-
     background-color: var(--cornflower);
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -755,13 +754,14 @@ pointer-events: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.close_button:hover .icon-close ,
+.close_button:hover .icon-close,
 .close_button:focus .icon-close {
     fill: var(--white);
 }
-.close_button:hover,
+.close_button:hover, 
 .close_button:focus {
     background-color: var(--ocean);
+    border: none;
     border: 1px solid var(--ocean);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -805,6 +805,7 @@ pointer-events: none;
 .form-input:focus, .form-input:hover + .team-icon-madal {
     fill: var(--iris);
     border: none;
+    border: 1px solid var(--ocean);
 } 
 
 .team-icon-madal {
@@ -854,10 +855,13 @@ height: 24px;
 .team-icon-madal {
     display: block;
     fill: var(--navy-blue);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-person, .icon-phone, .icon-email {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .form-input {
@@ -930,11 +934,9 @@ height: 24px;
     
 }
 .checkbox-icon {
-    display: inline-block;
-    position: relative;
-    
-    
+    fill: var(--white);
 }
+
 input:checked + .checkbox-box-f>.checkbox-icon-box {
     border-radius: 2px;
     fill: var(--cloud);
