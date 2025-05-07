@@ -801,7 +801,7 @@ pointer-events: none;
     display: block;
     position: relative;
 }
-.form-input:focus, .form-input:hover + .team-icon-madal {
+.form-input:focus, .form-input:hover + svg {
     fill: var(--iris);
     border: none;
     border: 1px solid var(--ocean);
