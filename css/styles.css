@@ -937,7 +937,6 @@ input:checked + .checkbox-box-f>.checkmark {
     fill: var(--cloud);
     background-color: var(--ocean);
     border: none;
-    border: 1px solid var(--ocean);
 }
 
 .model-button {
